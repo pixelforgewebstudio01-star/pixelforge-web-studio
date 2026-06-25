@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pixelforge Web Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .neon-text { text-shadow: 0 0 15px #22d3ee, 0 0 30px #22d3ee; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+  <!-- Simple Nav -->
+  <nav class="bg-black py-6 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between">
+      <a href="index.html" class="text-2xl font-bold neon-text">PIXELFORGE</a>
+      <div class="flex gap-8">
+        <a href="index.html" class="hover:text-cyan-400">Home</a>
+        <a href="#" class="hover:text-cyan-400">Services</a>
+        <a href="contact.html" class="text-cyan-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="max-w-2xl mx-auto px-6 py-24">
+    <h1 class="text-5xl font-bold text-center neon-text mb-4">Let's Build Something Great</h1>
+    <p class="text-center text-zinc-400 mb-12">Tell us about your project and we'll get back to you within 24 hours.</p>
+
+    <form name="contact" method="POST" data-netlify="true" class="space-y-8 bg-zinc-900 p-10 rounded-3xl">
+      <div>
+        <label class="block mb-2 text-sm">Your Name</label>
+        <input type="text" name="name" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm">Business / Website Goal</label>
+        <input type="text" name="business" placeholder="e.g. E-commerce store, Portfolio, SaaS landing page" class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm">Email Address</label>
+        <input type="email" name="email" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm">Message / Project Details</label>
+        <textarea name="message" rows="6" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:border-cyan-400 outline-none"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-6 rounded-2xl text-lg transition">
+        SEND MESSAGE
+      </button>
+    </form>
+
+    <p class="text-center mt-10 text-zinc-500">
+      Johannesburg, South Africa • Available for international projects
+    </p>
+  </div>
+
+</body>
+</html>
